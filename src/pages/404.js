@@ -3,7 +3,6 @@ import theme from "theme";
 import { Theme, Link } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"404"} />
@@ -36,10 +35,5 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
-		<RawHtml>
-			<script place={"endOfBody"} rawKey={"606f8f78c3dd5602827a37dd"}>
-				{"const processForm = form => {\n  const data = new FormData(form)\n  data.append('form-name', 'newsletter');\n  fetch('/', {\n    method: 'POST',\n    body: data,\n  })\n  .then(() => {\n    form.innerHTML = `<div class=\"form--success\">Almost there! Check your inbox for a confirmation e-mail.</div>`;\n  })\n  .catch(error => {\n    form.innerHTML = `<div class=\"form--error\">Error: ${error}</div>`;\n  })\n}"}
-			</script>
-		</RawHtml>
 	</Theme>;
 });
