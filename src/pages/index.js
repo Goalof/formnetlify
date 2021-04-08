@@ -17,6 +17,7 @@ export default (() => {
 		</Helmet>
 		<Section>
 			<Components.EmbedHTML />
+			<Components.EmbedJS />
 		</Section>
 		<Link
 			font={"--capture"}
