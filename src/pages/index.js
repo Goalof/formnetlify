@@ -42,8 +42,8 @@ export default (() => {
 			Made on Quarkly
 		</Link>
 		<RawHtml>
-			<script place={"endOfBody"} rawKey={"606f92bcc8c0fbdff852c5f5"}>
-				{"document.querySelector(\"form\").addEventListener(\"submit\", handleSubmit);\n\nconst handleSubmit = (e) => {\n  e.preventDefault()\n  let myForm = document.getElementById('pizzaOrder');\n  let formData = new FormData(myForm)\n  fetch('/', {\n    method: 'POST',\n    headers: { \"Content-Type\": \"application/x-www-form-urlencoded\" },\n    body: new URLSearchParams(formData).toString()\n  }).then(() => console.log('Form successfully submitted')).catch((error) =>\n    alert(error))\n}"}
+			<script place={"endOfBody"} rawKey={"606f94b1a077522ba29c2b67"}>
+				{"document.querySelector(\"form\").addEventListener(\"submit\", handleSubmit);\n\nconst handleSubmit = (e) => {\n  e.preventDefault()\n  let myForm = document.getElementById('dogPictures');\n  let formData = new FormData(myForm)\n  fetch('/', {\n    method: 'POST',\n    headers: { \"Content-Type\": \"multipart/form-data\" },\n    body: new URLSearchParams(formData).toString()\n  }).then(() => console.log('Form successfully submitted')).catch((error) =>\n    alert(error))\n}"}
 			</script>
 		</RawHtml>
 	</Theme>;
